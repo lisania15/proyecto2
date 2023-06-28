@@ -1,0 +1,172 @@
+/* Fonts */
+/* Importar aquí la font */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Sacramento&display=swap');
+
+
+
+/* Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* Para que el scrolleo en la one page sea suave */
+    scroll-behavior: smooth;
+}
+
+/* Para quitar los puntos a los items de listas */
+ul {
+    list-style: none;
+}
+
+/* Para que los enlaces hereden el color de texto y no tengan subrayado */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Este max-width es para que el contenido no se "estire" demasiado hacia los costados y
+*  el margin: auto; para tenerlo centrado fácilmente ;)*/
+main {
+    max-width: 1200px;
+    margin: auto;
+}
+
+/*estilos generales*/
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: #fbfbfb;
+    color: #0f0f0f;
+    font-size: 18px;
+    line-height: 1.2;
+}
+h1 {
+    font-size: 48px;
+    text-align: center;
+}
+h2 {
+    font-size: 32px;
+    text-align: center;
+}
+p {
+    margin: 20px 20px;    
+}
+img {
+    max-width: 100%;
+}
+
+/*header*/
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+    width: 100%;
+    padding: 16px;
+    box-shadow: 0 3px 10px -5px #5f5f5f;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.logo {
+    width: 200px;
+}
+
+.menu {
+    display: flex;
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+.menu li a {
+    padding: 25px;
+}
+
+/*estilar section*/
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    min-height: 100vh;
+    padding-top: 120px;
+}
+
+#inicio{
+    justify-content: space-around;
+}
+
+.presentacion-img {
+    margin-bottom: 20px;    
+}
+
+.presentacion-img img {
+    width: 400px;
+    border-radius: 50%;
+}
+
+/*estilar article*/
+.presentacion {
+    width: 100%;
+    text-align: center;
+}
+
+.btn-cv {
+    background-color:  #af599e;
+    padding: 12px 20px;
+    border-radius: 50px;
+    font-size: 20px;
+    color: #fbfbfb;
+    display: inline-block;
+}
+
+/*estilar contacto*/
+#contacto {
+    justify-content: space-around;
+}
+
+.hablemos {
+   background-color: rgba(175, 89, 158, 0.3); 
+   border-radius: 10px;
+   width: 100%;
+   text-align: center;
+   padding: 20px 20px;
+}
+
+.iconos {
+    width: 80px;
+    margin-right: 20px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.footer {
+    background-color: #af599e;
+    height: 90px;
+    width: 100%;
+    padding: 30px;
+    text-align: center;
+    color: #fbfbfb;
+}
+
+.btn-cv:hover {
+    
+    font-family: 'Sacramento', cursive;
+    font-size: 30px;
+    background-color: fuchsia;
+}
+
+.menu li a:hover {
+    font-family: 'Sacramento', cursive;
+    font-size: 30px;
+    color: fuchsia;
+}
+
+.iconos:hover {
+    background-color: fuchsia;
+    width: 90px;
+}
