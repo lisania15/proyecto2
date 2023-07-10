@@ -1,38 +1,28 @@
-/* Fonts */
-/* Importar aquí la font */
+
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Sacramento&display=swap');
 
-
-
-/* Reset */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    /* Para que el scrolleo en la one page sea suave */
     scroll-behavior: smooth;
 }
 
-/* Para quitar los puntos a los items de listas */
 ul {
     list-style: none;
 }
 
-/* Para que los enlaces hereden el color de texto y no tengan subrayado */
 a {
     text-decoration: none;
     color: inherit;
 }
 
-/* Este max-width es para que el contenido no se "estire" demasiado hacia los costados y
-*  el margin: auto; para tenerlo centrado fácilmente ;)*/
 main {
     max-width: 1200px;
     margin: auto;
 }
 
-/*estilos generales*/
 body {
     font-family: 'Lato', sans-serif;
     background-color: #fbfbfb;
@@ -41,11 +31,11 @@ body {
     line-height: 1.2;
 }
 h1 {
-    font-size: 48px;
+    font-size: 36px;
     text-align: center;
 }
 h2 {
-    font-size: 32px;
+    font-size: 28px;
     text-align: center;
 }
 p {
@@ -84,7 +74,6 @@ header {
     padding: 25px;
 }
 
-/*estilar section*/
 section{
     display: flex;
     flex-direction: column;
@@ -95,7 +84,7 @@ section{
     padding-top: 120px;
 }
 
-#inicio{
+#inicio {
     justify-content: space-around;
 }
 
@@ -108,7 +97,6 @@ section{
     border-radius: 50%;
 }
 
-/*estilar article*/
 .presentacion {
     width: 100%;
     text-align: center;
@@ -123,7 +111,6 @@ section{
     display: inline-block;
 }
 
-/*estilar contacto*/
 #contacto {
     justify-content: space-around;
 }
@@ -153,20 +140,50 @@ section{
     color: #fbfbfb;
 }
 
-.btn-cv:hover {
-    
+.btn-cv:hover, .active {
     font-family: 'Sacramento', cursive;
-    font-size: 30px;
-    background-color: fuchsia;
+    font-size: 25px;
+    color: #0f0f0f;
+    background-color: rgba(175, 89, 158, 0.3);
+    transition: 0,10s;
+}
+
+.active {
+    background-color: rgba(175, 89, 158, 0.3);
 }
 
 .menu li a:hover {
     font-family: 'Sacramento', cursive;
     font-size: 30px;
     color: fuchsia;
+    transition: 0,15s;
 }
 
 .iconos:hover {
-    background-color: fuchsia;
+    background-color: #af599e;
     width: 90px;
+    transition: 0,15s;
+} 
+
+@media (min-width: 768px) {
+    p{
+       font-size: 18px;  
+    }
+}
+
+@media (min-width: 1024px) {
+    h1 {
+        font-size: 48px;
+        text-align: left;
+    }
+    #inicio {
+        flex-direction: row;
+    }
+    .presentacion {
+        text-align: left;
+        width: 50%;
+    }
+    .presentacion p {
+        text-align: left;
+    }
 }
