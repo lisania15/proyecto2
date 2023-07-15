@@ -140,30 +140,30 @@ section{
     color: #fbfbfb;
 }
 
-.btn-cv:hover, .active {
+.btn-cv:hover {
     font-family: 'Sacramento', cursive;
     font-size: 25px;
     color: #0f0f0f;
     background-color: rgba(175, 89, 158, 0.3);
-    transition: 0,10s;
+    transition: 0,3s;
 }
 
-.active {
-    background-color: rgba(175, 89, 158, 0.3);
-}
-
-.menu li a:hover {
+.menu li a:hover, .active {
     font-family: 'Sacramento', cursive;
     font-size: 30px;
     color: fuchsia;
     transition: 0,15s;
 }
 
+.active {
+    background-color: rgba(175, 89, 158, 0.3);
+}
+
 .iconos:hover {
     background-color: #af599e;
     width: 90px;
     transition: 0,15s;
-} 
+}
 
 @media (min-width: 768px) {
     p{
